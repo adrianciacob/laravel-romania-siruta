@@ -1,0 +1,63 @@
+{
+  "name": "adrianciacob/laravel-romania-siruta",
+  "description": "Romanian SIRUTA database and locality resolver for Laravel",
+  "type": "library",
+  "keywords": [
+    "laravel",
+    "siruta",
+    "romania",
+    "localities",
+    "counties",
+    "administrative-units",
+    "ins"
+  ],
+  "homepage": "https://github.com/adrianciacob/laravel-romania-siruta",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Adrian C. Iacob",
+      "homepage": "https://github.com/adrianciacob"
+    }
+  ],
+  "require": {
+    "php": "^8.3",
+    "ext-mbstring": "*",
+    "illuminate/console": "^13.0",
+    "illuminate/database": "^13.0",
+    "illuminate/http": "^13.0",
+    "illuminate/support": "^13.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^11.0",
+    "pestphp/pest": "^4.0",
+    "phpunit/phpunit": "^12.5"
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test:unit": "vendor/bin/phpunit --testsuite=Unit"
+  },
+  "autoload": {
+    "psr-4": {
+      "adrianciacob\\Siruta\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "adrianciacob\\Siruta\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "adrianciacob\\Siruta\\SirutaServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
