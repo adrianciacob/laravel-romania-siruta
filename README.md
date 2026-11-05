@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Laravel Romania SIRUTA
 
 ![Latest Version on Packagist](https://img.shields.io/packagist/v/adrianciacob/laravel-romania-siruta.svg) ![License](https://img.shields.io/packagist/l/adrianciacob/laravel-romania-siruta.svg)
@@ -303,3 +304,7 @@ Packagist: adrianciacob/laravel-romania-siruta
 ---
 
 Made with care for the Laravel and Romanian developer communities.
+=======
+# laravel-romania-siruta
+Romanian [SIRUTA](https://insse.ro/cms/ro/siruta) database and locality resolver for Laravel.
+>>>>>>> 4d031571e58144c6ec4e722c910df07001f531a4
